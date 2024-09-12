@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: livingroomHardwoodfloor.ma
-//Last modified: Sat, Sep 07, 2024 11:01:49 PM
+//Last modified: Tue, Sep 10, 2024 08:54:43 AM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "0583D1A5-4A8D-0224-2421-6980B508CF9C";
+fileInfo "UUID" "4C7AD80E-4A15-3BF0-1533-D182BD759306";
 createNode transform -s -n "persp";
 	rename -uid "D1CB3048-49FB-B902-4D40-62AC345D28EE";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 14.579361155569245 8.6741960793791684 11.891518140394947 ;
-	setAttr ".r" -type "double3" -23.738352729159679 48.200000000001154 -2.3858962791964606e-15 ;
+	setAttr ".t" -type "double3" 12.445205967532994 11.320567375045192 5.2668482516003792 ;
+	setAttr ".r" -type "double3" -39.9383527291617 64.20000000000212 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "01AF7162-4797-8C2C-5F29-2AA1350933DE";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 19.956927114229416;
+	setAttr ".coi" 16.636852744360919;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -193,19 +193,8 @@ createNode mesh -n "TileShape1" -p "|Tileset1|Tile1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 14 ".pt";
-	setAttr ".pt[12]" -type "float3" 0 0 1 ;
-	setAttr ".pt[13]" -type "float3" 0 0 1 ;
-	setAttr ".pt[14]" -type "float3" 0 0 1 ;
-	setAttr ".pt[15]" -type "float3" 0 0 1 ;
-	setAttr ".pt[16]" -type "float3" 0 0 1 ;
-	setAttr ".pt[17]" -type "float3" 0 0 1 ;
-	setAttr ".pt[18]" -type "float3" 0 0 1 ;
-	setAttr ".pt[19]" -type "float3" 0 0 1 ;
-	setAttr ".pt[20]" -type "float3" 0 0 1 ;
-	setAttr ".pt[21]" -type "float3" 0 0 1 ;
-	setAttr ".pt[22]" -type "float3" 0 0 1 ;
-	setAttr ".pt[23]" -type "float3" 0 0 1 ;
+	setAttr -s 12 ".pt[12:23]" -type "float3"  0 0 1 0 0 1 0 0 1 0 0 1 0 
+		0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49153709 -0.5 0.49153709 -0.49153709 -0.42500755 0.5
 		 -0.5 -0.42500755 0.49153709 0.5 -0.42500755 0.49153709 0.49153709 -0.42500755 0.5
 		 0.49153709 -0.5 0.49153709 -0.5 0.42500746 0.49153709 -0.49153709 0.42500746 0.5
@@ -540,19 +529,8 @@ createNode mesh -n "TileShape5" -p "|Tileset1|Tile5";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 14 ".pt";
-	setAttr ".pt[12]" -type "float3" 0 0 1 ;
-	setAttr ".pt[13]" -type "float3" 0 0 1 ;
-	setAttr ".pt[14]" -type "float3" 0 0 1 ;
-	setAttr ".pt[15]" -type "float3" 0 0 1 ;
-	setAttr ".pt[16]" -type "float3" 0 0 1 ;
-	setAttr ".pt[17]" -type "float3" 0 0 1 ;
-	setAttr ".pt[18]" -type "float3" 0 0 1 ;
-	setAttr ".pt[19]" -type "float3" 0 0 1 ;
-	setAttr ".pt[20]" -type "float3" 0 0 1 ;
-	setAttr ".pt[21]" -type "float3" 0 0 1 ;
-	setAttr ".pt[22]" -type "float3" 0 0 1 ;
-	setAttr ".pt[23]" -type "float3" 0 0 1 ;
+	setAttr -s 12 ".pt[12:23]" -type "float3"  0 0 1 0 0 1 0 0 1 0 0 1 0 
+		0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49153709 -0.5 0.49153709 -0.49153709 -0.42500755 0.5
 		 -0.5 -0.42500755 0.49153709 0.5 -0.42500755 0.49153709 0.49153709 -0.42500755 0.5
 		 0.49153709 -0.5 0.49153709 -0.5 0.42500746 0.49153709 -0.49153709 0.42500746 0.5
@@ -898,19 +876,8 @@ createNode mesh -n "TileShape1" -p "|Tileset2|Tile1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 14 ".pt";
-	setAttr ".pt[12]" -type "float3" 0 0 1 ;
-	setAttr ".pt[13]" -type "float3" 0 0 1 ;
-	setAttr ".pt[14]" -type "float3" 0 0 1 ;
-	setAttr ".pt[15]" -type "float3" 0 0 1 ;
-	setAttr ".pt[16]" -type "float3" 0 0 1 ;
-	setAttr ".pt[17]" -type "float3" 0 0 1 ;
-	setAttr ".pt[18]" -type "float3" 0 0 1 ;
-	setAttr ".pt[19]" -type "float3" 0 0 1 ;
-	setAttr ".pt[20]" -type "float3" 0 0 1 ;
-	setAttr ".pt[21]" -type "float3" 0 0 1 ;
-	setAttr ".pt[22]" -type "float3" 0 0 1 ;
-	setAttr ".pt[23]" -type "float3" 0 0 1 ;
+	setAttr -s 12 ".pt[12:23]" -type "float3"  0 0 1 0 0 1 0 0 1 0 0 1 0 
+		0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49153709 -0.5 0.49153709 -0.49153709 -0.42500755 0.5
 		 -0.5 -0.42500755 0.49153709 0.5 -0.42500755 0.49153709 0.49153709 -0.42500755 0.5
 		 0.49153709 -0.5 0.49153709 -0.5 0.42500746 0.49153709 -0.49153709 0.42500746 0.5
@@ -1245,19 +1212,8 @@ createNode mesh -n "TileShape5" -p "|Tileset2|Tile5";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 14 ".pt";
-	setAttr ".pt[12]" -type "float3" 0 0 1 ;
-	setAttr ".pt[13]" -type "float3" 0 0 1 ;
-	setAttr ".pt[14]" -type "float3" 0 0 1 ;
-	setAttr ".pt[15]" -type "float3" 0 0 1 ;
-	setAttr ".pt[16]" -type "float3" 0 0 1 ;
-	setAttr ".pt[17]" -type "float3" 0 0 1 ;
-	setAttr ".pt[18]" -type "float3" 0 0 1 ;
-	setAttr ".pt[19]" -type "float3" 0 0 1 ;
-	setAttr ".pt[20]" -type "float3" 0 0 1 ;
-	setAttr ".pt[21]" -type "float3" 0 0 1 ;
-	setAttr ".pt[22]" -type "float3" 0 0 1 ;
-	setAttr ".pt[23]" -type "float3" 0 0 1 ;
+	setAttr -s 12 ".pt[12:23]" -type "float3"  0 0 1 0 0 1 0 0 1 0 0 1 0 
+		0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49153709 -0.5 0.49153709 -0.49153709 -0.42500755 0.5
 		 -0.5 -0.42500755 0.49153709 0.5 -0.42500755 0.49153709 0.49153709 -0.42500755 0.5
 		 0.49153709 -0.5 0.49153709 -0.5 0.42500746 0.49153709 -0.49153709 0.42500746 0.5
@@ -1694,19 +1650,8 @@ createNode mesh -n "TileShape1" -p "|Tileset3|Tile1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 14 ".pt";
-	setAttr ".pt[12]" -type "float3" 0 0 1 ;
-	setAttr ".pt[13]" -type "float3" 0 0 1 ;
-	setAttr ".pt[14]" -type "float3" 0 0 1 ;
-	setAttr ".pt[15]" -type "float3" 0 0 1 ;
-	setAttr ".pt[16]" -type "float3" 0 0 1 ;
-	setAttr ".pt[17]" -type "float3" 0 0 1 ;
-	setAttr ".pt[18]" -type "float3" 0 0 1 ;
-	setAttr ".pt[19]" -type "float3" 0 0 1 ;
-	setAttr ".pt[20]" -type "float3" 0 0 1 ;
-	setAttr ".pt[21]" -type "float3" 0 0 1 ;
-	setAttr ".pt[22]" -type "float3" 0 0 1 ;
-	setAttr ".pt[23]" -type "float3" 0 0 1 ;
+	setAttr -s 12 ".pt[12:23]" -type "float3"  0 0 1 0 0 1 0 0 1 0 0 1 0 
+		0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49153709 -0.5 0.49153709 -0.49153709 -0.42500755 0.5
 		 -0.5 -0.42500755 0.49153709 0.5 -0.42500755 0.49153709 0.49153709 -0.42500755 0.5
 		 0.49153709 -0.5 0.49153709 -0.5 0.42500746 0.49153709 -0.49153709 0.42500746 0.5
@@ -2041,19 +1986,8 @@ createNode mesh -n "TileShape5" -p "|Tileset3|Tile5";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 14 ".pt";
-	setAttr ".pt[12]" -type "float3" 0 0 1 ;
-	setAttr ".pt[13]" -type "float3" 0 0 1 ;
-	setAttr ".pt[14]" -type "float3" 0 0 1 ;
-	setAttr ".pt[15]" -type "float3" 0 0 1 ;
-	setAttr ".pt[16]" -type "float3" 0 0 1 ;
-	setAttr ".pt[17]" -type "float3" 0 0 1 ;
-	setAttr ".pt[18]" -type "float3" 0 0 1 ;
-	setAttr ".pt[19]" -type "float3" 0 0 1 ;
-	setAttr ".pt[20]" -type "float3" 0 0 1 ;
-	setAttr ".pt[21]" -type "float3" 0 0 1 ;
-	setAttr ".pt[22]" -type "float3" 0 0 1 ;
-	setAttr ".pt[23]" -type "float3" 0 0 1 ;
+	setAttr -s 12 ".pt[12:23]" -type "float3"  0 0 1 0 0 1 0 0 1 0 0 1 0 
+		0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49153709 -0.5 0.49153709 -0.49153709 -0.42500755 0.5
 		 -0.5 -0.42500755 0.49153709 0.5 -0.42500755 0.49153709 0.49153709 -0.42500755 0.5
 		 0.49153709 -0.5 0.49153709 -0.5 0.42500746 0.49153709 -0.49153709 0.42500746 0.5
@@ -2447,20 +2381,20 @@ createNode mesh -n "TileShape8" -p "|Tileset3|Tile8";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "06FC3610-4F65-C4AC-A632-FC8EC8838F15";
+	rename -uid "A704CA89-41C3-5522-D952-D2B497608B5A";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "2570EC37-4FF5-B071-F57D-D785F30D95FC";
+	rename -uid "64DCBF77-4398-3152-0B2C-A3A53D19DB37";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "6C111577-4C80-E02E-59ED-B1A399147257";
+	rename -uid "FFFB634D-482D-9DCA-9228-12B02CB1E741";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "7C276631-4EB8-9D43-1DEE-D2BEBC0FF889";
+	rename -uid "33B427CD-4F18-1B30-8F35-629E7F324449";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "7BD08628-4F4F-E066-5DBD-B1AE3FEA9D00";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "DDF8A4FB-4260-4245-159A-D18DDF4A4B28";
+	rename -uid "D5D63650-4C1A-E67F-E730-A58EB7DFD30C";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "77BB9CA8-42A2-D8AE-E9C0-528C935F48D4";
 	setAttr ".g" yes;
@@ -2551,11 +2485,7 @@ createNode polyBevel3 -n "polyBevel1";
 createNode polyTweak -n "polyTweak1";
 	rename -uid "14942752-4652-E12F-E345-02A89A96C7F8";
 	setAttr ".uopa" yes;
-	setAttr -s 5 ".tk";
-	setAttr ".tk[4]" -type "float3" 0 0 -1 ;
-	setAttr ".tk[5]" -type "float3" 0 0 -1 ;
-	setAttr ".tk[6]" -type "float3" 0 0 -1 ;
-	setAttr ".tk[7]" -type "float3" 0 0 -1 ;
+	setAttr -s 4 ".tk[4:7]" -type "float3"  0 0 -1 0 0 -1 0 0 -1 0 0 -1;
 createNode polyCube -n "polyCube1";
 	rename -uid "EB42E39E-4DF0-A179-2246-82ABCBEF315A";
 	setAttr ".cuv" 4;
@@ -2568,15 +2498,12 @@ createNode lambert -n "Floorcolor";
 createNode shadingEngine -n "lambert3SG";
 	rename -uid "E35A2733-482C-694A-A715-4D880C82C26B";
 	setAttr ".ihi" 0;
-	setAttr -s 22 ".dsm";
+	setAttr -s 21 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo2";
 	rename -uid "764D1692-49AF-F30E-C12C-A9B14B74E5EE";
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "D5CDF624-4669-F4E4-D938-59B10E5953F6";
-	setAttr ".sst" -type "string" "";
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "3DCE12CD-4721-D73F-57E8-5AA5819CF5A0";
+	rename -uid "E845EB73-4D0C-636B-D302-A4BB00E69401";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -3369.6862772505237 -744.20728750103024 ;
 	setAttr ".tgi[0].vh" -type "double2" -1854.0068949695003 93.33623322494924 ;
@@ -2593,6 +2520,9 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[3].x" -241.42857360839844;
 	setAttr ".tgi[0].ni[3].y" -141.42857360839844;
 	setAttr ".tgi[0].ni[3].nvs" 1923;
+createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
+	rename -uid "ACEB1910-4171-D062-33F0-15885880E4FA";
+	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -2636,8 +2566,6 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "deleteComponent1.og" "|Tileset1|Tile7|TileShape7.i";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
