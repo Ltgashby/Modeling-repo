@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: GMUVRocksstarted.ma
-//Last modified: Sun, Dec 08, 2024 03:47:25 AM
+//Name: GMUVRocksstarted2.ma
+//Last modified: Sun, Dec 08, 2024 03:47:35 AM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "type" -nodeType "shellDeformer" -nodeType "vectorAdjust" -nodeType "typeExtrude"
@@ -15,7 +15,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "CEB53457-4261-7B5A-13B4-7E999C134ABC";
+fileInfo "UUID" "4D280DC7-4300-4E1D-D477-38830C8935DE";
 createNode transform -s -n "persp";
 	rename -uid "E0530828-4841-3792-04CE-38AB8A6DA744";
 	setAttr ".v" no;
@@ -45218,7 +45218,7 @@ createNode shadingEngine -n "lambert31SG";
 createNode materialInfo -n "materialInfo38";
 	rename -uid "2BFDC721-4D4B-3885-9D22-57B7B1C68FF5";
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "040CD15A-4B2F-887F-5E9C-C480A2173A1C";
+	rename -uid "ACD7DA2D-416D-DEF0-6494-ADB4883F362C";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
@@ -46420,4 +46420,4 @@ connectAttr "groupId179.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId217.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId218.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId219.msg" ":initialShadingGroup.gn" -na;
-// End of GMUVRocksstarted.ma
+// End of GMUVRocksstarted2.ma
